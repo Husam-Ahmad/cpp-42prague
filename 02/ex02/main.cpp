@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 17:10:13 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/10 13:58:37 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/08 18:31:33 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,17 @@
 
 int main( void ) {
     Fixed a;
-    Fixed b( a );
-    Fixed c;
-//    a.number = 42; // wouldnt work because number is private, so we need to use setRawBits
+    Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
 
-    c = b;
-    std::cout << a.getRawBits() << std::endl;
-    std::cout << b.getRawBits() << std::endl;
-    std::cout << c.getRawBits() << std::endl;
-    return (0);
+    std::cout << a << std::endl;
+    std::cout << ++a << std::endl;
+    std::cout << a << std::endl;
+    std::cout << a++ << std::endl;
+    std::cout << a << std::endl;
+
+    std::cout << b << std::endl;
+
+    std::cout << Fixed::max( a, b ) << std::endl;
+
+    return 0;
 }
