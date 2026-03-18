@@ -6,25 +6,23 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/18 11:13:42 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/18 11:16:00 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/18 14:26:32 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat() {
-    this->type = "Cat";
+Cat::Cat() : Animal("Cat") {
     this->CatBrain = new Brain();
     std::cout << "Cat Default Constructor Called" << std::endl;
 }
 
-Cat::Cat(std::string type) {
-    this->type = type;
+Cat::Cat(std::string type) : Animal(type) {
     this->CatBrain = new Brain();
     std::cout << "Parameter Cat Constructor Called" << std::endl;
 }
 
-Cat::Cat(const Cat &cpy) {
+Cat::Cat(const Cat &cpy) : Animal(cpy){
     *this = cpy;
     std::cout << "Cat Copy Constructor Called" << std::endl;
 }

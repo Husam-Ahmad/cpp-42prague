@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/18 11:17:26 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/18 14:10:05 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/18 14:20:00 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,15 @@ void	seeBrainAnimal(void){				//seeing that is a deep copy
     std::cout << cat.getType() << std::endl;
     std::cout << cat.getBrain() << ". My name now is: Pepy " << std::endl;
     cat.setType("Pepa");
-    std::cout << cat.getType();
-    std::cout << std::endl;
+    std::cout << cat.getType() << std::endl;
     std::cout << deepCat.getBrain() << ": " << deepCat.getType();
     std::cout << std::endl;
     std::cout << std::endl;
     std::cout << "--------------DOG--------------------" << std::endl;
     std::cout << dog->getType() << std::endl;
     std::cout << dog->getBrain() << ": My name now is Bobby" << std::endl;
-
     dog->setType("Bobby");
-    std::cout << dog->getType();
-    std::cout << std::endl;
+    std::cout << dog->getType() << std::endl;
     std::cout << deepDog->getBrain() << ": " << deepDog->getType();
     std::cout << std::endl;
     std::cout << std::endl;

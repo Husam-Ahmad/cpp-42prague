@@ -6,23 +6,23 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/18 11:13:42 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/18 11:16:00 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/18 14:30:41 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat() {
+WrongCat::WrongCat() : WrongAnimal() {
     this->type = "Wrong Cat";
     std::cout << "WrongCat Default Constructor Called" << std::endl;
 }
 
-WrongCat::WrongCat(std::string type) {
+WrongCat::WrongCat(std::string type) : WrongAnimal(type) {
     this->type = type;
     std::cout << "WrongCat Parameter Constructor Called" << std::endl;
 }
 
-WrongCat::WrongCat(const WrongCat &cpy) {
+WrongCat::WrongCat(const WrongCat &cpy) : WrongAnimal(cpy) {
     *this = cpy;
     std::cout << "WrongCat Copy Constructor Called" << std::endl;
 }

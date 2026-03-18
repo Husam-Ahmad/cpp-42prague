@@ -6,25 +6,23 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/18 11:13:42 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/18 11:16:00 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/18 14:26:18 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog() {
-    this->type = "Dog";
+Dog::Dog() : Animal("Dog") {
     this->DogBrain = new Brain();
     std::cout << "Dog Default Constructor Called" << std::endl;
 }
 
-Dog::Dog(std::string type) {
-    this->type = type;
+Dog::Dog(std::string type) : Animal(type) {
     this->DogBrain = new Brain();
     std::cout << " Dog Parameter Constructor Called" << std::endl;
 }
 
-Dog::Dog(const Dog &cpy) {
+Dog::Dog(const Dog &cpy) : Animal(cpy) {
     *this = cpy;
     std::cout << "Dog Copy Constructor Called" << std::endl;
 }
