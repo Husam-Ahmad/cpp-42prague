@@ -1,0 +1,53 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/18 11:17:42 by huahmad           #+#    #+#             */
+/*   Updated: 2026/03/18 11:17:44 by huahmad          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Brain.hpp"
+
+Brain::Brain() {
+    std::string ideas[] = {
+            "Doritos",
+            "Oreos",
+            "Pringles",
+            "Reese’s Peanut Butter Cups",
+            "Goldfish",
+            "Cheetos",
+            "M&Ms",
+            "Cheez-Its",
+            "Gummy Bears",
+            "Fritos",
+    };
+    long unsigned int i = 0;
+    for(int j = 0; j < 100; j++) {
+        if (i == 10)
+            i = 0;
+        this->ideas[j] = ideas[i];
+        i++;
+    }
+    std::cout << "Brain Default Constructor Called" << std::endl;
+}
+
+Brain::Brain(const Brain &cpy) {
+    *this = cpy;
+    std::cout << "Brain Copy Constructor Called" << std::endl;
+}
+
+Brain &Brain::operator=(const Brain &cpy) {
+    for(int i = 0; i < 100; i++) {
+        this->ideas[i] = cpy.ideas[i];
+    }
+    std::cout << "Brain Copy Assignement Constructor Called" << std::endl;
+    return (*this);
+}
+
+Brain::~Brain() {
+    std::cout << "Brain Destructor Called" << std::endl;
+}

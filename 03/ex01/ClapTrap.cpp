@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 19:02:39 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/14 19:02:47 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/16 17:54:52 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,11 +99,11 @@ int ClapTrap::getAttackDamage() const {
     return (this->attackDamage);
 }
 
-std::ostream &operator<<(std::ostream &out, const ClapTrap &teste) {
+std::ostream &operator<<(std::ostream &out, const ClapTrap &testing) {
     out << std::endl;
-    out << "Name:          " << teste.getName() << std::endl;
-    out << "Attack Damage: " << teste.getAttackDamage() << std::endl;
-    out << "Energy left:   " << teste.getEnergyPoints() << std::endl;
-    out << "Life left:     " << teste.getHitPoints() << std::endl;
+    out << "Name:          " << testing.getName() << std::endl;
+    out << "Attack Damage: " << testing.getAttackDamage() << std::endl;
+    out << "Energy left:   " << testing.getEnergyPoints() << std::endl;
+    out << "Life left:     " << testing.getHitPoints() << std::endl;
     return out;
 }

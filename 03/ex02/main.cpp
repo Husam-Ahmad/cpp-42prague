@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 19:19:53 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/14 19:19:55 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/16 17:54:52 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,17 @@ int main() {
     Scav.guardGate();
     Frag.highFivesGuys();
 
-//    ScavTrap teste("player1");
-//    teste.attack("player2");
-//    std::cout << "ScavTrap name: " << teste.getName() << std::endl;
-//    std::cout << teste << std::endl;
-//    teste.attack("Good-boy");
-//    teste.attack("Good-boy");
-//    teste.takeDamage(80);
-//    std::cout << teste << std::endl;
-//    teste.beRapaired(30);
-//    std::cout << teste << std::endl;
-//    teste.guardGate();
+//    ScavTrap testing("player1");
+//    testing.attack("player2");
+//    std::cout << "ScavTrap name: " << testing.getName() << std::endl;
+//    std::cout << testing << std::endl;
+//    testing.attack("Good-boy");
+//    testing.attack("Good-boy");
+//    testing.takeDamage(80);
+//    std::cout << testing << std::endl;
+//    testing.beRapaired(30);
+//    std::cout << testing << std::endl;
+//    testing.guardGate();
 
 //    ClapTrap robot1("player1");
 //

@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 19:19:22 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/14 19:19:24 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/16 17:54:52 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ class ClapTrap {
         int getAttackDamage( void ) const;
 };
 
-std::ostream &operator<<(std::ostream &out, const ClapTrap &teste);
+std::ostream &operator<<(std::ostream &out, const ClapTrap &testing);
 
 #endif

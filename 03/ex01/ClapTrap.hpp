@@ -25,6 +25,6 @@ class ClapTrap {
         int getAttackDamage( void ) const;
 };
 
-std::ostream &operator<<(std::ostream &out, const ClapTrap &teste);
+std::ostream &operator<<(std::ostream &out, const ClapTrap &testing);
 
 #endif 

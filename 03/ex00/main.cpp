@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 19:02:10 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/14 19:02:12 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/16 11:45:38 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main() {
     std::cout << robot1 << std::endl;
     robot1.beRapaired(10);
     std::cout<< robot1 << std::endl;
-    robot1.takeDamage(20);
+    robot1.takeDamage(18);
     std::cout << robot1 << std::endl;
     robot1.attack("player3");
     std::cout << robot1 << std::endl;

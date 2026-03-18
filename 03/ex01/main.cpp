@@ -1,17 +1,17 @@
 #include "ScavTrap.hpp"
 
 int main() {
-    ScavTrap teste("player1");
-    teste.attack("player2");
-    std::cout << "ScavTrap name: " << teste.getName() << std::endl;
-    std::cout << teste << std::endl;
-    teste.attack("Good-boy");
-    teste.attack("Good-boy");
-    teste.takeDamage(80);
-    std::cout << teste << std::endl;
-    teste.beRapaired(30);
-    std::cout << teste << std::endl;
-    teste.guardGate();
+    ScavTrap testing("player1");
+    testing.attack("player2");
+    std::cout << "ScavTrap name: " << testing.getName() << std::endl;
+    std::cout << testing << std::endl;
+    testing.attack("Good-boy");
+    testing.attack("Good-boy");
+    testing.takeDamage(80);
+    std::cout << testing << std::endl;
+    testing.beRapaired(30);
+    std::cout << testing << std::endl;
+    testing.guardGate();
 
 //    ClapTrap robot1("player1");
 //

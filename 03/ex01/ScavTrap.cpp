@@ -6,7 +6,7 @@
 /*   By: huahmad <huahmad@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 19:03:15 by huahmad           #+#    #+#             */
-/*   Updated: 2026/03/14 19:03:18 by huahmad          ###   ########.fr       */
+/*   Updated: 2026/03/16 17:54:52 by huahmad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,11 @@ void ScavTrap::guardGate()
     std::cout << "ScavTrap is now on Gate Keep Mode!" << std::endl;
 }
 
-std::ostream &operator<<(std::ostream &out, const ScavTrap &teste) {
+std::ostream &operator<<(std::ostream &out, const ScavTrap &testing) {
     out << std::endl;
-    out << "Name:          " << teste.getName() << std::endl;
-    out << "Attack Damage: " << teste.getAttackDamage() << std::endl;
-    out << "Energy left:   " << teste.getEnergyPoints() << std::endl;
-    out << "Life left:     " << teste.getHitPoints() << std::endl;
+    out << "Name:          " << testing.getName() << std::endl;
+    out << "Attack Damage: " << testing.getAttackDamage() << std::endl;
+    out << "Energy left:   " << testing.getEnergyPoints() << std::endl;
+    out << "Life left:     " << testing.getHitPoints() << std::endl;
     return out;
 }
